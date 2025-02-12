@@ -8,6 +8,7 @@ import ActiveSectionContextProvider from "@/context/active-section-context";
 import ThemeSwitch from "@/components/ThemeSwitcher";
 import LanguageSwitch from "@/components/LangSwitcher";
 import Header from "@/components/Header";
+import { Toaster } from "@/components/ui/toaster";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -39,6 +40,7 @@ export default function RootLayout({
             <ActiveSectionContextProvider>
               <Header />
               {children}
+              <Toaster />
               <ThemeSwitch />
               <LanguageSwitch />
             </ActiveSectionContextProvider>
