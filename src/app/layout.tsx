@@ -30,7 +30,7 @@ export default function RootLayout({
       <body
         className={cn(
           inter.className,
-          "bg-gray-50 text-gray-950 relative pt-28 sm:pt-0 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90 antialiased"
+          "bg-gray-50 text-gray-950 relative pt-28 sm:pt-0 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90 "
         )}
       >
         <div className="bg-[#fbe2e3] absolute top-[-1rem] -z-10 right-[2rem] h-[50vh] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#905263] 2xl:right-[22rem] 2xl:blur-[20rem] 2xl:top-[-4rem]"></div>

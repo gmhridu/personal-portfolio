@@ -77,11 +77,11 @@ const en = {
     },
   ],
   intro: {
-    greeting: "Hernan Hawryluk",
+    greeting: "Golam Mahabub Redoy",
     heading: "Full-Stack Developer",
-    main: "I develop high-quality web and cross-platform applications for iOS and Android.",
+    main: "I develop high-quality web applications",
     second:
-      "My main stack includes React Native, Swift, Kotlin, Next.js, and Django among other key technologies.",
+      "My main stack includes React, NextJs, TypeScript, NodeJs, MongoDB & Postgres among other key technologies.",
     contactButton: "Contact me here",
     downloadCV: "Download CV",
   },

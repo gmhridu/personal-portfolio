@@ -31,12 +31,12 @@ export default function Intro() {
           >
             <Image
               src={portrait}
-              alt="Hernan Hawryluk portrait"
-              width={192}
-              height={192}
+              alt="GM Redoy"
+              width={250}
+              height={250}
               quality={100}
               priority={true}
-              className="h-20 w-20 xl:h-24 xl:w-24 rounded-full border-[0.35rem] border-white shadow-x1"
+              className="h-24 w-24 xl:h-24 xl:w-24 rounded-full border-[0.35rem] border-white shadow-x1"
             />
           </motion.div>
         </div>
@@ -45,7 +45,7 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="flex flex-col mb-10 mt-4 px-1 sm:px-4 text-xl font-medium !leading-[1.5] sm:text-3xl xl:text-4xl"
+        className="flex flex-col mb-10 mt-4 px-1 dark:text-gray-50 sm:px-4 text-xl font-medium !leading-[1.5] sm:text-3xl xl:text-4xl"
       >
         <span>{t("intro.greeting")}</span>
         <h1>{t("intro.heading")}</h1>
@@ -74,33 +74,33 @@ export default function Intro() {
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
 
-        <a
+        <Link
           href={language === "es" ? "/es/CV.pdf" : "/en/CV.pdf"}
           download
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:z-10 transition active:scale-105 cursor-pointer borderBlack dark:bg-white/10 backdrop-blur-[0.5rem]"
+          className="group bg-white dark:text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:z-10 transition active:scale-105 cursor-pointer borderBlack dark:bg-white/10 backdrop-blur-[0.5rem]"
         >
           {t("intro.downloadCV")}{" "}
           <HiDownload className="opacity-60 group-hover:translate-x-1 transition" />
-        </a>
+        </Link>
 
         <div className="flex items-center justify-center gap-2">
-          <a
-            href="https://www.linkedin.com/in/hernan-hawryluk/"
+          <Link
+            href="https://www.linkedin.com/in/golam-mahabub-redoy"
             target="_blank"
             aria-label="LinkedIn"
             className="bg-white p-4 text-gray-700 flex items-center rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 transition active:scale-105 cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 dark:hover:text-white/90 backdrop-blur-[0.5rem]"
           >
             <BsLinkedin />
-          </a>
+          </Link>
 
-          <a
-            href="https://github.com/hernanhawryluk/"
+          <Link
+            href="https://github.com/gmhridu"
             target="_blank"
             aria-label="GitHub"
             className="bg-white p-4 text-gray-700 flex items-center rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 transition active:scale-105 cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 dark:hover:text-white/90 backdrop-blur-[0.5rem]"
           >
             <BsGithub />
-          </a>
+          </Link>
         </div>
       </motion.div>
     </section>

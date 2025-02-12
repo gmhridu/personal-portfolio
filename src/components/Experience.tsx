@@ -21,7 +21,7 @@ export default function Experience() {
   return (
     <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
       <SectionHeading>{t("experience.title")}</SectionHeading>
-      <VerticalTimeline lineColor="">
+      <VerticalTimeline lineColor="white">
         {t("experience.data").map((item: experienceProps, index: number) => {
           return <TimelineElement key={index} item={item} />;
         })}

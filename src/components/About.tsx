@@ -24,7 +24,7 @@ export default function About() {
       id="about"
     >
       <SectionHeading>{t("about.title")}</SectionHeading>
-      <p className="mb-10 leading-9 sm:leading-[46px]">{t("about.first")}</p>
+      <p className="mb-10 leading-9 dark:text-white sm:leading-[46px]">{t("about.first")}</p>
 
       <div className="flex flex-wrap items-center justify-center gap-7 mb-10">
         {t("about.data").map((item: skillsProps, index: number) => (
@@ -46,7 +46,7 @@ export default function About() {
         ))}
       </div>
 
-      <p className="block leading-9 sm:leading-[46px]">{t("about.second")}</p>
+      <p className="block leading-9 dark:text-white sm:leading-[46px]">{t("about.second")}</p>
     </motion.section>
   );
 }
