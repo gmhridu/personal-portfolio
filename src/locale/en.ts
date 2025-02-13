@@ -3,8 +3,6 @@ import { FaCode, FaReact } from "react-icons/fa";
 import {
   SiAsana,
   SiBootstrap,
-  SiDjango,
-  SiExpo,
   SiExpress,
   SiFigma,
   SiFirebase,
@@ -14,36 +12,18 @@ import {
   SiHtml5,
   SiJavascript,
   SiJirasoftware,
-  SiKotlin,
   SiMongodb,
   SiNextdotjs,
   SiNodedotjs,
   SiPostgresql,
   SiPrisma,
-  SiPython,
   SiReact,
-  SiSqlite,
-  SiSwift,
   SiTailwindcss,
   SiTypescript,
-  SiUnrealengine,
 } from "react-icons/si";
 import { LuGraduationCap } from "react-icons/lu";
-import instagramClonImg from "../../public/projects/instagram-clon.png";
-import renderWebImg from "../../public/projects/render-web.png";
-import interactiveRenderImg from "../../public/projects/interactive-render.png";
-import portfolioWebImg from "../../public/projects/portfolio-web.png";
-import ecommerceAppImg from "../../public/projects/ecommerce-app.png";
-import blogAppImg from "../../public/projects/blog-app.png";
-import taskManagerAppImg from "../../public/projects/task-manager-app.png";
-import djangoAppImg from "../../public/projects/django-app.png";
-import googleProjectManagementImg from "../../public/certifications/google-project-management.png";
-import ibmNodeJsImg from "../../public/certifications/ibm-node-js.png";
-import metaFrontEndDeveloperImg from "../../public/certifications/meta-front-end-developer.png";
-import metaBackEndDeveloperImg from "../../public/certifications/meta-back-end-developer.png";
-import metaReactNativeImg from "../../public/certifications/meta-react-native-specialization.png";
-import platziOOPImg from "../../public/certifications/platzi-oop.png";
-import platziHtmlCssImg from "../../public/certifications/platzi-html-css.png";
+import iPhoneImg from "../../public/projects/iPhone.png";
+import Certificate from "../../public/certifications/certificate.png";
 
 const en = {
   links: [
@@ -87,22 +67,16 @@ const en = {
   },
   about: {
     title: "About me",
-    first:
-      "I am a Developer with solid experience in native and cross-platform mobile application development, as well as skills in web development, back-end, and databases. This allows me to collaborate in the comprehensive design of web and mobile applications, from their initial conception to deployment.",
-    second:
-      "I am a native Spanish speaker with an advanced level of English. I am familiar with Agile and Scrum methodologies, as well as the use of version control tools. My dedication and experience are reflected in the polished, high-quality projects I have developed for clients or shared on GitHub.",
+    first: `I am a passionate Front-End Developer with experience in building modern and responsive web applications. With expertise in HTML, CSS, JavaScript, React, Next.js, and TailwindCSS, I create user-friendly and visually appealing interfaces. I also have knowledge of Node.js, Express.js, and MongoDB, allowing me to work on full-stack projects.
+
+    I am proficient in Git, GitHub, Netlify, and Vercel for version control and deployment, and I am familiar with Agile and Scrum methodologies. My dedication to clean, maintainable code and continuous learning drives me to develop high-quality projects.`,
+    second: `I have built and contributed to various applications, including an e-commerce platform with Stripe payment integration and an Eraserio clone showcasing UI/UX and state management expertise. You can explore my work on GitHub and my portfolio website.
+
+      As a native Bangla speaker with a strong command of English, I enjoy collaborating with diverse teams and bringing ideas to life.`,
     data: [
       {
         icon: React.createElement(SiReact),
         color: "#61dafb",
-      },
-      {
-        icon: React.createElement(SiSwift),
-        color: "#3178c6",
-      },
-      {
-        icon: React.createElement(SiKotlin),
-        color: "#7F52B0",
       },
       {
         icon: React.createElement(SiNextdotjs),
@@ -113,11 +87,11 @@ const en = {
         color: "#3178c6",
       },
       {
-        icon: React.createElement(SiPython),
-        color: "#3776ab",
+        icon: React.createElement(SiTailwindcss),
+        color: "#38bdf8",
       },
       {
-        icon: React.createElement(SiDjango),
+        icon: React.createElement(SiMongodb),
         color: "#44b78b",
       },
     ],
@@ -126,108 +100,42 @@ const en = {
     title: "My Projects",
     data: [
       {
-        title: "Node.js and React App",
+        title: "iPhone 15 Pro Website Clone",
         description:
-          "A full-stack application developed with the MERN Stack, where users can manage and appoint their tasks. It features authentication, CRUD operations, and good performance.",
+          "A visually stunning clone of Apple's iPhone 15 Pro website, built using React, Three.js, GSAP, and TailwindCSS. This project showcases 3D model rendering, smooth animations, and an interactive video carousel. It demonstrates expertise in React Three Fiber for realistic 3D models and GSAP for fluid animations, ensuring a seamless user experience. The website is fully responsive, adapting beautifully to different screen sizes.",
         tags: [
           "React",
-          "Node.js",
-          "Express.js",
-          "TypeScript",
-          "Tailwind",
-          "Mongo-DB",
+          "Three.js",
+          "React Three Fiber",
+          "GSAP",
+          "TailwindCSS",
+          "Vite",
+          "Frontend",
+          "UI/UX",
+          "3D Web Development",
         ],
-        imageUrl: taskManagerAppImg,
-        repositoryUrl: "https://github.com/hernanhawryluk/tasks-nodejs-backend",
+        imageUrl: iPhoneImg,
+        repositoryUrl: "https://github.com/gmhridu/iPhone-clone",
         demoType: "Deploy",
-        demoUrl: "https://tasks-react-frontend.vercel.app",
+        demoUrl: "https://iphone-clone-lovat-tau.vercel.app",
       },
-      {
-        title: "Next.js Web App",
-        description:
-          "This portfolio is fully responsive for seamless adaptation to all screens, also providing multilingual support, light and dark modes, animations, and form validation.",
-        tags: ["Next.js", "React", "TypeScript", "Tailwind", "Framer Motion"],
-        imageUrl: portfolioWebImg,
-        repositoryUrl: "https://github.com/hernanhawryluk/portfolio-nextjs-app",
-        demoType: "Deploy",
-        demoUrl: "#",
-      },
-      {
-        title: "Django Web Server",
-        description:
-          "Full-stack application developed with Django, leveraging the MVT architecture, featuring dynamic content, secure forms, user authentication, and online booking.",
-        tags: ["Python", "Django", "PostreSQL", "Rest Framework", "Bootstrap"],
-        imageUrl: djangoAppImg,
-        repositoryUrl: "https://github.com/hernanhawryluk/little-lemon-django",
-        demoType: "Deploy",
-        demoUrl: "https://little-lemon-django-iota.vercel.app",
-      },
-      {
-        title: "Next.js Web App",
-        description:
-          "A minimalistic blog, featuring Google and Github authentication, category filtering, content pagination, write and comment functionality, good performance and SEO practices.",
-        tags: [
-          "Next.js",
-          "React",
-          "TypeScript",
-          "Tailwind",
-          "Mongo-DB",
-          "Prisma",
-        ],
-        imageUrl: blogAppImg,
-        repositoryUrl: "https://github.com/hernanhawryluk/blog-nextjs-app",
-        demoType: "Deploy",
-        demoUrl:
-          "https://blog-nextjs-app-hernan-hawryluks-projects.vercel.app/",
-      },
-      {
-        title: "E-commerce Web Next.js",
-        description:
-          "Responsive design, user and Google authentication, intuitive shopping cart, Stripe payment integration, product reviews, dashboard for product and order management.",
-        tags: [
-          "Next.js",
-          "React",
-          "TypeScript",
-          "Tailwind",
-          "Mongo-DB",
-          "Prisma",
-        ],
-        imageUrl: ecommerceAppImg,
-        repositoryUrl: "https://github.com/hernanhawryluk/nextjs-commerce-app",
-        demoType: "Deploy",
-        demoUrl: "https://nextjs-commerce-app-pi.vercel.app",
-      },
-      {
-        title: "Instagram Clone App",
-        description:
-          "A fully functional Instagram replica seamlessly compatible with iOS and Android. It includes user authentication, post creation, notifications, real-time interactions, and other features.",
-        tags: ["React Native", "Expo", "Firebase"],
-        imageUrl: instagramClonImg,
-        repositoryUrl: "https://github.com/hernanhawryluk/instagram-clone-app",
-        demoType: "Video",
-        demoUrl: "https://youtu.be/llQH79EdmfU",
-      },
-      {
-        title: "Renders Web Site",
-        description:
-          "A website developed from scratch with responsive design to effectively showcase high-quality architectural renders. It includes a real-time online quotation system, animations, and form validation.",
-        tags: ["HTML5", "CSS", "JavaScript"],
-        imageUrl: renderWebImg,
-        repositoryUrl: "https://github.com/hernanhawryluk/web-renders-showcase",
-        demoType: "Deploy",
-        demoUrl: "https://hernanhawryluk.github.io/web-renders-showcase/",
-      },
-      {
-        title: "Interactive Render",
-        description:
-          "An apartment designed in a game engine that provides the freedom to explore, interact with all its elements, change lighting, and customize finishes.",
-        tags: ["Unreal Engine 5", "Blueprints", "SketchUp Pro", "3D Warehouse"],
-        imageUrl: interactiveRenderImg,
-        repositoryUrl:
-          "https://github.com/hernanhawryluk/ue5-interactive-render",
-        demoType: "Video",
-        demoUrl: "https://youtu.be/7X-eYt_Ll30",
-      },
+      // {
+      //   title: "E-commerce Web Next.js",
+      //   description:
+      //     "Responsive design, user and Google authentication, intuitive shopping cart, Stripe payment integration, product reviews, dashboard for product and order management.",
+      //   tags: [
+      //     "Next.js",
+      //     "React",
+      //     "TypeScript",
+      //     "Tailwind",
+      //     "Mongo-DB",
+      //     "Prisma",
+      //   ],
+      //   imageUrl: ecommerceAppImg,
+      //   repositoryUrl: "https://github.com/hernanhawryluk/nextjs-commerce-app",
+      //   demoType: "Deploy",
+      //   demoUrl: "https://nextjs-commerce-app-pi.vercel.app",
+      // },
     ],
   },
   skills: {
@@ -288,46 +196,7 @@ const en = {
         icon: React.createElement(SiFramer),
         color: "#000000",
       },
-      {
-        skill: "Swift",
-        icon: React.createElement(SiSwift),
-        color: "#F05138",
-      },
-      {
-        skill: "SwiftUI",
-        icon: React.createElement(SiSwift),
-        color: "#3178c6",
-      },
-      {
-        skill: "Kotlin",
-        icon: React.createElement(SiKotlin),
-        color: "#7F52B0",
-      },
-      {
-        skill: "React Native",
-        icon: React.createElement(SiReact),
-        color: "#61dafb",
-      },
-      {
-        skill: "Expo",
-        icon: React.createElement(SiExpo),
-        color: "#000000",
-      },
-      {
-        skill: "Python",
-        icon: React.createElement(SiPython),
-        color: "#3572A5",
-      },
-      {
-        skill: "Django",
-        icon: React.createElement(SiDjango),
-        color: "#44b78b",
-      },
-      {
-        skill: "REST Framework",
-        icon: React.createElement(SiDjango),
-        color: "#44b78b",
-      },
+
       {
         skill: "MongoDB",
         icon: React.createElement(SiMongodb),
@@ -337,11 +206,6 @@ const en = {
         skill: "Firebase",
         icon: React.createElement(SiFirebase),
         color: "#ffcb2b",
-      },
-      {
-        skill: "SQLite",
-        icon: React.createElement(SiSqlite),
-        color: "#3498db",
       },
       {
         skill: "PostgreSQL",
@@ -378,36 +242,13 @@ const en = {
         icon: React.createElement(SiJirasoftware),
         color: "#0052cc",
       },
-      {
-        skill: "Unreal Engine",
-        icon: React.createElement(SiUnrealengine),
-        color: "#000000",
-      },
     ],
   },
   certifications: {
-    title: "Certificaciones",
+    title: "Certifications",
     data: [
       {
-        imageUrl: metaFrontEndDeveloperImg,
-      },
-      {
-        imageUrl: metaBackEndDeveloperImg,
-      },
-      {
-        imageUrl: metaReactNativeImg,
-      },
-      {
-        imageUrl: googleProjectManagementImg,
-      },
-      {
-        imageUrl: ibmNodeJsImg,
-      },
-      {
-        imageUrl: platziOOPImg,
-      },
-      {
-        imageUrl: platziHtmlCssImg,
+        imageUrl: Certificate,
       },
     ],
   },
