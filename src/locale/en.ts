@@ -24,6 +24,10 @@ import {
 import { LuGraduationCap } from "react-icons/lu";
 import iPhoneImg from "../../public/projects/iPhone.png";
 import Certificate from "../../public/certifications/certificate.png";
+import hamsoyaImg from "../../public/projects/hamsoya.png";
+import eraserImg from "../../public/projects/eraser.png";
+import globexImg from "../../public/projects/globex.png";
+import roccoImg from "../../public/projects/rocco.png";
 
 const en = {
   links: [
@@ -63,7 +67,7 @@ const en = {
     second:
       "My main stack includes React, NextJs, TypeScript, NodeJs, MongoDB & Postgres among other key technologies.",
     contactButton: "Contact me here",
-    downloadCV: "Download CV",
+    downloadCV: "Download Resume",
   },
   about: {
     title: "About me",
@@ -118,6 +122,76 @@ const en = {
         repositoryUrl: "https://github.com/gmhridu/iPhone-clone",
         demoType: "Deploy",
         demoUrl: "https://iphone-clone-lovat-tau.vercel.app",
+      },
+      {
+        title: "E-Commerce Platform",
+        description:
+          "Developed a full-stack e-commerce platform using Next.js and React with React Router for seamless navigation, featuring a responsive admin dashboard for managing products, orders, customers, and categories. Implemented complete CRUD functionality via REST API integration with Hono backend, utilized Tailwind CSS for modern, mobile-first UI design, and ensured secure authentication and data integrity, resulting in efficient administration and improved user experience.",
+        tags: [
+          "Next.js",
+          "Tailwind CSS",
+          "React",
+          "TypeScript",
+          "React Router",
+          "Hono.js",
+        ],
+        imageUrl: hamsoyaImg,
+        repositoryUrl: "https://github.com/gmhridu/personal-portfolio",
+        demoType: "Deploy",
+        demoUrl: "https://www.hamsoya.com/",
+      },
+      {
+        title: "Diagramming",
+        description:
+          "Developed a full-stack diagramming platform using React, Next.js, and TypeScript, featuring a scalable architecture for managing files, teams, and collaborative workspaces. Built a responsive dashboard with file listing, user authentication via Kinde, and a dual-pane interface integrating TipTap markdown editor and Excalidraw canvas for real-time content creation. Integrated Convex for backend data management, utilized React Router for navigation, and styled with Tailwind CSS, resulting in an efficient tool that supports engineering teams in building and sharing diagrams and documentation.",
+        tags: [
+          "Next.js",
+          "Tailwind CSS",
+          "TypeScript",
+          "React",
+          "Kinde",
+          "Tiptap",
+          "Exclidraw",
+          "Convex",
+        ],
+        imageUrl: eraserImg,
+        repositoryUrl: "https://github.com/gmhridu/earserio-clone",
+        demoType: "Deploy",
+        demoUrl: "https://earserio-clone.vercel.app/",
+      },
+      {
+        title: "B2B Service Agency",
+        description:
+          "Developed a high-performance, SEO-optimized website for a global manufacturing growth agency using Next.js. Leveraged Server-Side Rendering (SSR) and Static Site Generation (SSG) to ensure lightning-fast load times and maximum search engine visibility. Implemented a scalable folder architecture following SOLID principles and integrated REST APIs for dynamic content management. Designed a responsive interface with Tailwind CSS, resulting in a seamless user experience across all devices.",
+        tags: [
+          "Next.js",
+          "React",
+          "Tailwind CSS",
+          "TypeScript",
+          "REST API",
+          "SEO Best Practices",
+        ],
+        imageUrl: globexImg,
+        repositoryUrl: "https://github.com/gmhridu/globex",
+        demoType: "Deploy",
+        demoUrl: "https://www.weareglobex.com/",
+      },
+      {
+        title: "Premium Pet Treats E-Commerce",
+        description:
+          "Engineered an industry-focused platform for Rocco Treats, a South African pet treat producer. Built using Next.js and Tailwind CSS, the site features a fully responsive, pixel-perfect UI designed to convert B2B clients into private-label partners. Developed a robust contact and subscription system using the Resend API, ensuring 100% deliverability for business inquiries. Optimized the site for Core Web Vitals and SEO, resulting in high search visibility for niche manufacturing keywords.",
+        tags: [
+          "Next.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "Resend",
+          "Framer Motion",
+          "SEO Auditing",
+        ],
+        imageUrl: roccoImg,
+        repositoryUrl: "https://github.com/gmhridu/rocco_treats",
+        demoType: "Deploy",
+        demoUrl: "https://rocco-treats.vercel.app/",
       },
       // {
       //   title: "E-commerce Web Next.js",
